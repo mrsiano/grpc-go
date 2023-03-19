@@ -35,7 +35,6 @@ import (
 	"google.golang.org/grpc/internal/binarylog"
 	"google.golang.org/grpc/internal/channelz"
 	"google.golang.org/grpc/internal/grpcrand"
-	"google.golang.org/grpc/internal/grpcutil"
 	imetadata "google.golang.org/grpc/internal/metadata"
 	iresolver "google.golang.org/grpc/internal/resolver"
 	"google.golang.org/grpc/internal/serviceconfig"
@@ -428,9 +427,9 @@ func (cs *clientStream) newAttemptLocked(isTransparent bool) (*csAttempt, error)
 	if cs.cc.parsedTarget.URL.Scheme == "xds" {
 		// Add extra metadata (metadata that will be added by transport) to context
 		// so the balancer can see them.
-		ctx = grpcutil.WithExtraMetadata(ctx, metadata.Pairs(
-			"content-type", grpcutil.ContentType(cs.callHdr.ContentSubtype),
-		))
+		//ctx = grpcutil.WithExtraMetadata(ctx, metadata.Pairs(
+		//	"content-type", grpcutil.ContentType(cs.callHdr.ContentSubtype),
+		//))
 	}
 
 	return &csAttempt{
