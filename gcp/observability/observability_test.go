@@ -31,16 +31,16 @@ import (
 	"time"
 
 	"github.com/google/go-cmp/cmp"
+	"github.com/mrsiano/grpc-go/internal/envconfig"
+	"github.com/mrsiano/grpc-go/internal/grpcsync"
+	"github.com/mrsiano/grpc-go/internal/grpctest"
+	"github.com/mrsiano/grpc-go/internal/leakcheck"
+	"github.com/mrsiano/grpc-go/internal/stubserver"
+	"github.com/mrsiano/grpc-go/internal/testutils"
+	"github.com/mrsiano/grpc-go/metadata"
+	"github.com/mrsiano/grpc-go/test/grpc_testing"
 	"go.opencensus.io/stats/view"
 	"go.opencensus.io/trace"
-	"google.golang.org/grpc/internal/envconfig"
-	"google.golang.org/grpc/internal/grpcsync"
-	"google.golang.org/grpc/internal/grpctest"
-	"google.golang.org/grpc/internal/leakcheck"
-	"google.golang.org/grpc/internal/stubserver"
-	"google.golang.org/grpc/internal/testutils"
-	"google.golang.org/grpc/metadata"
-	"google.golang.org/grpc/test/grpc_testing"
 )
 
 type s struct {

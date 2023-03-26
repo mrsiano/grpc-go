@@ -21,7 +21,7 @@
 package connectivity
 
 import (
-	"google.golang.org/grpc/grpclog"
+	"github.com/mrsiano/grpc-go/grpclog"
 )
 
 var logger = grpclog.Component("core")

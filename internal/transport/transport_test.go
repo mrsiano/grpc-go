@@ -35,20 +35,20 @@ import (
 	"testing"
 	"time"
 
-	"google.golang.org/grpc/peer"
+	"github.com/mrsiano/grpc-go/peer"
 
 	"github.com/google/go-cmp/cmp"
+	"github.com/mrsiano/grpc-go/attributes"
+	"github.com/mrsiano/grpc-go/codes"
+	"github.com/mrsiano/grpc-go/credentials"
+	"github.com/mrsiano/grpc-go/internal/channelz"
+	"github.com/mrsiano/grpc-go/internal/grpctest"
+	"github.com/mrsiano/grpc-go/internal/leakcheck"
+	"github.com/mrsiano/grpc-go/internal/testutils"
+	"github.com/mrsiano/grpc-go/resolver"
+	"github.com/mrsiano/grpc-go/status"
 	"golang.org/x/net/http2"
 	"golang.org/x/net/http2/hpack"
-	"google.golang.org/grpc/attributes"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/internal/channelz"
-	"google.golang.org/grpc/internal/grpctest"
-	"google.golang.org/grpc/internal/leakcheck"
-	"google.golang.org/grpc/internal/testutils"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/status"
 )
 
 type s struct {

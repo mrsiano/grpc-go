@@ -28,10 +28,10 @@ import (
 	"sync"
 	"sync/atomic"
 
+	"github.com/mrsiano/grpc-go/internal/grpcutil"
+	"github.com/mrsiano/grpc-go/status"
 	"golang.org/x/net/http2"
 	"golang.org/x/net/http2/hpack"
-	"google.golang.org/grpc/internal/grpcutil"
-	"google.golang.org/grpc/status"
 )
 
 var updateHeaderTblSize = func(e *hpack.Encoder, v uint32) {

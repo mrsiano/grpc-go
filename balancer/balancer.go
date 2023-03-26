@@ -27,13 +27,13 @@ import (
 	"net"
 	"strings"
 
-	"google.golang.org/grpc/channelz"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/internal"
-	"google.golang.org/grpc/metadata"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/serviceconfig"
+	"github.com/mrsiano/grpc-go/channelz"
+	"github.com/mrsiano/grpc-go/connectivity"
+	"github.com/mrsiano/grpc-go/credentials"
+	"github.com/mrsiano/grpc-go/internal"
+	"github.com/mrsiano/grpc-go/metadata"
+	"github.com/mrsiano/grpc-go/resolver"
+	"github.com/mrsiano/grpc-go/serviceconfig"
 )
 
 var (

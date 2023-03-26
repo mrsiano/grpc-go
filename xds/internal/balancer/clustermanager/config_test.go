@@ -22,10 +22,10 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/grpc/balancer"
-	_ "google.golang.org/grpc/balancer/weightedtarget"
-	internalserviceconfig "google.golang.org/grpc/internal/serviceconfig"
-	_ "google.golang.org/grpc/xds/internal/balancer/cdsbalancer"
+	"github.com/mrsiano/grpc-go/balancer"
+	_ "github.com/mrsiano/grpc-go/balancer/weightedtarget"
+	internalserviceconfig "github.com/mrsiano/grpc-go/internal/serviceconfig"
+	_ "github.com/mrsiano/grpc-go/xds/internal/balancer/cdsbalancer"
 )
 
 const (

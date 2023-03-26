@@ -26,29 +26,28 @@ import (
 	"testing"
 	"time"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/credentials/insecure"
-	"google.golang.org/grpc/internal"
-	"google.golang.org/grpc/internal/balancergroup"
-	"google.golang.org/grpc/internal/grpctest"
-	"google.golang.org/grpc/internal/stubserver"
-	rrutil "google.golang.org/grpc/internal/testutils/roundrobin"
-	"google.golang.org/grpc/internal/testutils/xds/e2e"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/resolver/manual"
-	"google.golang.org/grpc/serviceconfig"
-	"google.golang.org/grpc/status"
-	"google.golang.org/grpc/xds/internal/balancer/priority"
-	"google.golang.org/grpc/xds/internal/xdsclient"
+	"github.com/mrsiano/grpc-go/codes"
+	"github.com/mrsiano/grpc-go/credentials/insecure"
+	"github.com/mrsiano/grpc-go/internal"
+	"github.com/mrsiano/grpc-go/internal/balancergroup"
+	"github.com/mrsiano/grpc-go/internal/grpctest"
+	"github.com/mrsiano/grpc-go/internal/stubserver"
+	rrutil "github.com/mrsiano/grpc-go/internal/testutils/roundrobin"
+	"github.com/mrsiano/grpc-go/internal/testutils/xds/e2e"
+	"github.com/mrsiano/grpc-go/resolver"
+	"github.com/mrsiano/grpc-go/resolver/manual"
+	"github.com/mrsiano/grpc-go/serviceconfig"
+	"github.com/mrsiano/grpc-go/status"
+	"github.com/mrsiano/grpc-go/xds/internal/balancer/priority"
+	"github.com/mrsiano/grpc-go/xds/internal/xdsclient"
 
 	v3corepb "github.com/envoyproxy/go-control-plane/envoy/config/core/v3"
 	v3endpointpb "github.com/envoyproxy/go-control-plane/envoy/config/endpoint/v3"
 	wrapperspb "github.com/golang/protobuf/ptypes/wrappers"
-	testgrpc "google.golang.org/grpc/test/grpc_testing"
-	testpb "google.golang.org/grpc/test/grpc_testing"
+	testgrpc "github.com/mrsiano/grpc-go/test/grpc_testing"
+	testpb "github.com/mrsiano/grpc-go/test/grpc_testing"
 
-	_ "google.golang.org/grpc/xds/internal/balancer/clusterresolver" // Register the "cluster_resolver_experimental" LB policy.
+	_ "github.com/mrsiano/grpc-go/xds/internal/balancer/clusterresolver" // Register the "cluster_resolver_experimental" LB policy.
 )
 
 const (

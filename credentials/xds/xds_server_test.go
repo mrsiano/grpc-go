@@ -30,10 +30,10 @@ import (
 	"testing"
 	"time"
 
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/credentials/tls/certprovider"
-	xdsinternal "google.golang.org/grpc/internal/credentials/xds"
-	"google.golang.org/grpc/testdata"
+	"github.com/mrsiano/grpc-go/credentials"
+	"github.com/mrsiano/grpc-go/credentials/tls/certprovider"
+	xdsinternal "github.com/mrsiano/grpc-go/internal/credentials/xds"
+	"github.com/mrsiano/grpc-go/testdata"
 )
 
 func makeClientTLSConfig(t *testing.T, mTLS bool) *tls.Config {

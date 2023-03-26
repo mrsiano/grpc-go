@@ -27,10 +27,9 @@ import (
 	"go.opencensus.io/tag"
 	"go.opencensus.io/trace"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/internal"
-	"google.golang.org/grpc/stats"
-	"google.golang.org/grpc/status"
+	"github.com/mrsiano/grpc-go/internal"
+	"github.com/mrsiano/grpc-go/stats"
+	"github.com/mrsiano/grpc-go/status"
 )
 
 var (

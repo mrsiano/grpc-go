@@ -25,11 +25,11 @@ import (
 
 	"github.com/golang/protobuf/proto"
 	"github.com/golang/protobuf/ptypes"
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/internal"
-	"google.golang.org/grpc/internal/envconfig"
-	rlspb "google.golang.org/grpc/internal/proto/grpc_lookup_v1"
-	"google.golang.org/grpc/xds/internal/clusterspecifier"
+	"github.com/mrsiano/grpc-go/balancer"
+	"github.com/mrsiano/grpc-go/internal"
+	"github.com/mrsiano/grpc-go/internal/envconfig"
+	rlspb "github.com/mrsiano/grpc-go/internal/proto/grpc_lookup_v1"
+	"github.com/mrsiano/grpc-go/xds/internal/clusterspecifier"
 	"google.golang.org/protobuf/encoding/protojson"
 	"google.golang.org/protobuf/types/known/anypb"
 )

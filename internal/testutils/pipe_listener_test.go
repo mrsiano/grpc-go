@@ -22,8 +22,8 @@ import (
 	"testing"
 	"time"
 
-	"google.golang.org/grpc/internal/grpctest"
-	"google.golang.org/grpc/internal/testutils"
+	"github.com/mrsiano/grpc-go/internal/grpctest"
+	"github.com/mrsiano/grpc-go/internal/testutils"
 )
 
 type s struct {

@@ -24,15 +24,15 @@ import (
 	"strings"
 	"sync"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/internal/balancer/gracefulswitch"
-	"google.golang.org/grpc/internal/buffer"
-	"google.golang.org/grpc/internal/channelz"
-	"google.golang.org/grpc/internal/grpcsync"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/status"
+	"github.com/mrsiano/grpc-go/balancer"
+	"github.com/mrsiano/grpc-go/codes"
+	"github.com/mrsiano/grpc-go/connectivity"
+	"github.com/mrsiano/grpc-go/internal/balancer/gracefulswitch"
+	"github.com/mrsiano/grpc-go/internal/buffer"
+	"github.com/mrsiano/grpc-go/internal/channelz"
+	"github.com/mrsiano/grpc-go/internal/grpcsync"
+	"github.com/mrsiano/grpc-go/resolver"
+	"github.com/mrsiano/grpc-go/status"
 )
 
 // ccBalancerWrapper sits between the ClientConn and the Balancer.

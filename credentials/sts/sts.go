@@ -40,8 +40,8 @@ import (
 	"sync"
 	"time"
 
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/grpclog"
+	"github.com/mrsiano/grpc-go/credentials"
+	"github.com/mrsiano/grpc-go/grpclog"
 )
 
 const (

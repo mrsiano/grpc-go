@@ -30,19 +30,18 @@ import (
 	"sync/atomic"
 	"time"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/admin"
-	"google.golang.org/grpc/credentials/insecure"
-	"google.golang.org/grpc/credentials/xds"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/metadata"
-	"google.golang.org/grpc/peer"
-	"google.golang.org/grpc/reflection"
-	"google.golang.org/grpc/status"
-	_ "google.golang.org/grpc/xds"
+	"github.com/mrsiano/grpc-go/admin"
+	"github.com/mrsiano/grpc-go/credentials/insecure"
+	"github.com/mrsiano/grpc-go/credentials/xds"
+	"github.com/mrsiano/grpc-go/grpclog"
+	"github.com/mrsiano/grpc-go/metadata"
+	"github.com/mrsiano/grpc-go/peer"
+	"github.com/mrsiano/grpc-go/reflection"
+	"github.com/mrsiano/grpc-go/status"
+	_ "github.com/mrsiano/grpc-go/xds"
 
-	testgrpc "google.golang.org/grpc/interop/grpc_testing"
-	testpb "google.golang.org/grpc/interop/grpc_testing"
+	testgrpc "github.com/mrsiano/grpc-go/interop/grpc_testing"
+	testpb "github.com/mrsiano/grpc-go/interop/grpc_testing"
 )
 
 func init() {

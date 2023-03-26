@@ -28,11 +28,10 @@ import (
 	"github.com/golang/protobuf/proto"
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials/tls/certprovider"
-	"google.golang.org/grpc/internal"
-	"google.golang.org/grpc/internal/envconfig"
-	"google.golang.org/grpc/xds/bootstrap"
+	"github.com/mrsiano/grpc-go/credentials/tls/certprovider"
+	"github.com/mrsiano/grpc-go/internal"
+	"github.com/mrsiano/grpc-go/internal/envconfig"
+	"github.com/mrsiano/grpc-go/xds/bootstrap"
 
 	v3corepb "github.com/envoyproxy/go-control-plane/envoy/config/core/v3"
 	structpb "github.com/golang/protobuf/ptypes/struct"
@@ -384,17 +383,17 @@ func TestNewConfigV3ProtoSuccess(t *testing.T) {
 	}{
 		{
 			"emptyNodeProto", &Config{
-				XDSServer: &ServerConfig{
-					ServerURI: "trafficdirector.googleapis.com:443",
-					Creds:     ChannelCreds{Type: "insecure"},
-				},
-				NodeProto: &v3corepb.Node{
-					UserAgentName:        gRPCUserAgentName,
-					UserAgentVersionType: &v3corepb.Node_UserAgentVersion{UserAgentVersion: grpc.Version},
-					ClientFeatures:       []string{clientFeatureNoOverprovisioning, clientFeatureResourceWrapper},
-				},
-				ClientDefaultListenerResourceNameTemplate: "%s",
+			XDSServer: &ServerConfig{
+				ServerURI: "trafficdirector.googleapis.com:443",
+				Creds:     ChannelCreds{Type: "insecure"},
 			},
+			NodeProto: &v3corepb.Node{
+				UserAgentName:        gRPCUserAgentName,
+				UserAgentVersionType: &v3corepb.Node_UserAgentVersion{UserAgentVersion: grpc.Version},
+				ClientFeatures:       []string{clientFeatureNoOverprovisioning, clientFeatureResourceWrapper},
+			},
+			ClientDefaultListenerResourceNameTemplate: "%s",
+		},
 		},
 		{"unknownTopLevelFieldInFile", nilCredsConfigNoServerFeatures},
 		{"unknownFieldInNodeProto", nilCredsConfigNoServerFeatures},

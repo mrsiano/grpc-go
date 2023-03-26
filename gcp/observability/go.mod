@@ -1,4 +1,4 @@
-module google.golang.org/grpc/gcp/observability
+module github.com/mrsiano/grpc-go/gcp/observability
 
 go 1.17
 
@@ -10,8 +10,8 @@ require (
 	go.opencensus.io v0.24.0
 	golang.org/x/oauth2 v0.5.0
 	google.golang.org/api v0.109.0
-	google.golang.org/grpc v1.53.0-dev.0.20230315171901-a1e657ce53ba
-	google.golang.org/grpc/stats/opencensus v0.0.0-20230317183452-b638faff2204
+	github.com/mrsiano/grpc-go latest
+	github.com/mrsiano/grpc-go/stats/opencensus v0.0.0-20230317183452-b638faff2204
 )
 
 require (

@@ -23,8 +23,8 @@ import (
 	"net/url"
 	"sync"
 
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/serviceconfig"
+	"github.com/mrsiano/grpc-go/resolver"
+	"github.com/mrsiano/grpc-go/serviceconfig"
 )
 
 var (

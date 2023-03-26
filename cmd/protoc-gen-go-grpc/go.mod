@@ -1,4 +1,4 @@
-module google.golang.org/grpc/cmd/protoc-gen-go-grpc
+module github.com/mrsiano/grpc-go/cmd/protoc-gen-go-grpc
 
 go 1.17
 

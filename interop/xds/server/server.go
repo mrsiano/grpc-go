@@ -27,20 +27,19 @@ import (
 	"net"
 	"os"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/admin"
-	"google.golang.org/grpc/credentials/insecure"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/health"
-	"google.golang.org/grpc/metadata"
-	"google.golang.org/grpc/reflection"
-	"google.golang.org/grpc/xds"
+	"github.com/mrsiano/grpc-go/admin"
+	"github.com/mrsiano/grpc-go/credentials/insecure"
+	"github.com/mrsiano/grpc-go/grpclog"
+	"github.com/mrsiano/grpc-go/health"
+	"github.com/mrsiano/grpc-go/metadata"
+	"github.com/mrsiano/grpc-go/reflection"
+	"github.com/mrsiano/grpc-go/xds"
 
-	xdscreds "google.golang.org/grpc/credentials/xds"
-	healthgrpc "google.golang.org/grpc/health/grpc_health_v1"
-	healthpb "google.golang.org/grpc/health/grpc_health_v1"
-	testgrpc "google.golang.org/grpc/interop/grpc_testing"
-	testpb "google.golang.org/grpc/interop/grpc_testing"
+	xdscreds "github.com/mrsiano/grpc-go/credentials/xds"
+	healthgrpc "github.com/mrsiano/grpc-go/health/grpc_health_v1"
+	healthpb "github.com/mrsiano/grpc-go/health/grpc_health_v1"
+	testgrpc "github.com/mrsiano/grpc-go/interop/grpc_testing"
+	testpb "github.com/mrsiano/grpc-go/interop/grpc_testing"
 )
 
 var (

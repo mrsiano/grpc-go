@@ -25,11 +25,10 @@ import (
 	"log"
 	"net"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/gcp/observability"
-	"google.golang.org/grpc/interop"
+	"github.com/mrsiano/grpc-go/gcp/observability"
+	"github.com/mrsiano/grpc-go/interop"
 
-	testgrpc "google.golang.org/grpc/interop/grpc_testing"
+	testgrpc "github.com/mrsiano/grpc-go/interop/grpc_testing"
 )
 
 var (

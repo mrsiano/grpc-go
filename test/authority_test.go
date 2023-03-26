@@ -31,15 +31,14 @@ import (
 	"testing"
 	"time"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/credentials/insecure"
-	"google.golang.org/grpc/internal/stubserver"
-	"google.golang.org/grpc/metadata"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/resolver/manual"
-	"google.golang.org/grpc/status"
-	testpb "google.golang.org/grpc/test/grpc_testing"
+	"github.com/mrsiano/grpc-go/codes"
+	"github.com/mrsiano/grpc-go/credentials/insecure"
+	"github.com/mrsiano/grpc-go/internal/stubserver"
+	"github.com/mrsiano/grpc-go/metadata"
+	"github.com/mrsiano/grpc-go/resolver"
+	"github.com/mrsiano/grpc-go/resolver/manual"
+	"github.com/mrsiano/grpc-go/status"
+	testpb "github.com/mrsiano/grpc-go/test/grpc_testing"
 )
 
 func authorityChecker(ctx context.Context, expectedAuthority string) (*testpb.Empty, error) {

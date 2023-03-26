@@ -23,9 +23,9 @@ import (
 	"errors"
 	"strings"
 
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/peer"
-	"google.golang.org/grpc/status"
+	"github.com/mrsiano/grpc-go/codes"
+	"github.com/mrsiano/grpc-go/peer"
+	"github.com/mrsiano/grpc-go/status"
 )
 
 // AuthInfoFromContext extracts the alts.AuthInfo object from the given context,

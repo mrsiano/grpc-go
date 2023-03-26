@@ -27,8 +27,7 @@ import (
 	"strconv"
 
 	"github.com/envoyproxy/go-control-plane/pkg/cache/types"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/internal/testutils/xds/fakeserver"
+	"github.com/mrsiano/grpc-go/internal/testutils/xds/fakeserver"
 
 	v3clusterpb "github.com/envoyproxy/go-control-plane/envoy/config/cluster/v3"
 	v3endpointpb "github.com/envoyproxy/go-control-plane/envoy/config/endpoint/v3"

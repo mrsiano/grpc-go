@@ -26,9 +26,9 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
-	"google.golang.org/grpc/internal/testutils"
-	"google.golang.org/grpc/xds/internal/testutils/fakeclient"
-	"google.golang.org/grpc/xds/internal/xdsclient/xdsresource"
+	"github.com/mrsiano/grpc-go/internal/testutils"
+	"github.com/mrsiano/grpc-go/xds/internal/testutils/fakeclient"
+	"github.com/mrsiano/grpc-go/xds/internal/xdsclient/xdsresource"
 	"google.golang.org/protobuf/proto"
 )
 

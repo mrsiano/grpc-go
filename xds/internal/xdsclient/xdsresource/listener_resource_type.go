@@ -20,9 +20,9 @@ package xdsresource
 import (
 	"fmt"
 
-	"google.golang.org/grpc/internal/pretty"
-	"google.golang.org/grpc/xds/internal/xdsclient/bootstrap"
-	"google.golang.org/grpc/xds/internal/xdsclient/xdsresource/version"
+	"github.com/mrsiano/grpc-go/internal/pretty"
+	"github.com/mrsiano/grpc-go/xds/internal/xdsclient/bootstrap"
+	"github.com/mrsiano/grpc-go/xds/internal/xdsclient/xdsresource/version"
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/types/known/anypb"
 )

@@ -31,11 +31,10 @@ import (
 	"errors"
 	"fmt"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/internal"
-	"google.golang.org/grpc/internal/balancerload"
-	"google.golang.org/grpc/metadata"
+	"github.com/mrsiano/grpc-go/grpclog"
+	"github.com/mrsiano/grpc-go/internal"
+	"github.com/mrsiano/grpc-go/internal/balancerload"
+	"github.com/mrsiano/grpc-go/metadata"
 	"google.golang.org/protobuf/proto"
 
 	v3orcapb "github.com/cncf/xds/go/xds/data/orca/v3"

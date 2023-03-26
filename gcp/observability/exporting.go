@@ -23,10 +23,9 @@ import (
 	"fmt"
 	"time"
 
+	"github.com/mrsiano/grpc-go/internal"
+	"github.com/mrsiano/grpc-go/stats/opencensus"
 	"google.golang.org/api/option"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/internal"
-	"google.golang.org/grpc/stats/opencensus"
 
 	gcplogging "cloud.google.com/go/logging"
 )

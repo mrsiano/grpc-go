@@ -21,8 +21,8 @@ package weightedtarget
 import (
 	"encoding/json"
 
-	internalserviceconfig "google.golang.org/grpc/internal/serviceconfig"
-	"google.golang.org/grpc/serviceconfig"
+	internalserviceconfig "github.com/mrsiano/grpc-go/internal/serviceconfig"
+	"github.com/mrsiano/grpc-go/serviceconfig"
 )
 
 // Target represents one target with the weight and the child policy.

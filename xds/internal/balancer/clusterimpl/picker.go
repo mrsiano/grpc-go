@@ -19,13 +19,13 @@
 package clusterimpl
 
 import (
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/internal/wrr"
-	"google.golang.org/grpc/status"
-	"google.golang.org/grpc/xds/internal/xdsclient"
-	"google.golang.org/grpc/xds/internal/xdsclient/load"
+	"github.com/mrsiano/grpc-go/balancer"
+	"github.com/mrsiano/grpc-go/codes"
+	"github.com/mrsiano/grpc-go/connectivity"
+	"github.com/mrsiano/grpc-go/internal/wrr"
+	"github.com/mrsiano/grpc-go/status"
+	"github.com/mrsiano/grpc-go/xds/internal/xdsclient"
+	"github.com/mrsiano/grpc-go/xds/internal/xdsclient/load"
 
 	v3orcapb "github.com/cncf/xds/go/xds/data/orca/v3"
 )

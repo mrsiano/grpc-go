@@ -22,13 +22,13 @@ import (
 	"strings"
 	"sync"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/internal/channelz"
-	"google.golang.org/grpc/internal/grpcsync"
-	"google.golang.org/grpc/internal/pretty"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/serviceconfig"
+	"github.com/mrsiano/grpc-go/balancer"
+	"github.com/mrsiano/grpc-go/credentials"
+	"github.com/mrsiano/grpc-go/internal/channelz"
+	"github.com/mrsiano/grpc-go/internal/grpcsync"
+	"github.com/mrsiano/grpc-go/internal/pretty"
+	"github.com/mrsiano/grpc-go/resolver"
+	"github.com/mrsiano/grpc-go/serviceconfig"
 )
 
 // ccResolverWrapper is a wrapper on top of cc for resolvers.

@@ -22,10 +22,10 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/grpc/balancer"
-	_ "google.golang.org/grpc/balancer/grpclb"
-	"google.golang.org/grpc/balancer/roundrobin"
-	internalserviceconfig "google.golang.org/grpc/internal/serviceconfig"
+	"github.com/mrsiano/grpc-go/balancer"
+	_ "github.com/mrsiano/grpc-go/balancer/grpclb"
+	"github.com/mrsiano/grpc-go/balancer/roundrobin"
+	internalserviceconfig "github.com/mrsiano/grpc-go/internal/serviceconfig"
 )
 
 const (

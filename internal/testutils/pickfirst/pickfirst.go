@@ -25,12 +25,11 @@ import (
 	"fmt"
 	"time"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/peer"
-	"google.golang.org/grpc/resolver"
+	"github.com/mrsiano/grpc-go/peer"
+	"github.com/mrsiano/grpc-go/resolver"
 
-	testgrpc "google.golang.org/grpc/test/grpc_testing"
-	testpb "google.golang.org/grpc/test/grpc_testing"
+	testgrpc "github.com/mrsiano/grpc-go/test/grpc_testing"
+	testpb "github.com/mrsiano/grpc-go/test/grpc_testing"
 )
 
 // CheckRPCsToBackend makes a bunch of RPCs on the given ClientConn and verifies

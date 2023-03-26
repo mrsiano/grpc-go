@@ -30,17 +30,16 @@ import (
 	"sync"
 	"time"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/credentials/insecure"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/interop"
-	"google.golang.org/grpc/status"
-	"google.golang.org/grpc/testdata"
+	"github.com/mrsiano/grpc-go/codes"
+	"github.com/mrsiano/grpc-go/credentials"
+	"github.com/mrsiano/grpc-go/credentials/insecure"
+	"github.com/mrsiano/grpc-go/grpclog"
+	"github.com/mrsiano/grpc-go/interop"
+	"github.com/mrsiano/grpc-go/status"
+	"github.com/mrsiano/grpc-go/testdata"
 
-	testgrpc "google.golang.org/grpc/interop/grpc_testing"
-	metricspb "google.golang.org/grpc/stress/grpc_testing"
+	testgrpc "github.com/mrsiano/grpc-go/interop/grpc_testing"
+	metricspb "github.com/mrsiano/grpc-go/stress/grpc_testing"
 )
 
 var (

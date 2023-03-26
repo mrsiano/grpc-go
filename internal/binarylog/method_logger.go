@@ -27,9 +27,9 @@ import (
 
 	"github.com/golang/protobuf/proto"
 	"github.com/golang/protobuf/ptypes"
-	binlogpb "google.golang.org/grpc/binarylog/grpc_binarylog_v1"
-	"google.golang.org/grpc/metadata"
-	"google.golang.org/grpc/status"
+	binlogpb "github.com/mrsiano/grpc-go/binarylog/grpc_binarylog_v1"
+	"github.com/mrsiano/grpc-go/metadata"
+	"github.com/mrsiano/grpc-go/status"
 )
 
 type callIDGenerator struct {

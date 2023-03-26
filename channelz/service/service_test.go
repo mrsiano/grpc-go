@@ -30,13 +30,13 @@ import (
 	"github.com/golang/protobuf/proto"
 	"github.com/golang/protobuf/ptypes"
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/internal/channelz"
-	"google.golang.org/grpc/internal/grpctest"
+	"github.com/mrsiano/grpc-go/connectivity"
+	"github.com/mrsiano/grpc-go/credentials"
+	"github.com/mrsiano/grpc-go/internal/channelz"
+	"github.com/mrsiano/grpc-go/internal/grpctest"
 	"google.golang.org/protobuf/testing/protocmp"
 
-	channelzpb "google.golang.org/grpc/channelz/grpc_channelz_v1"
+	channelzpb "github.com/mrsiano/grpc-go/channelz/grpc_channelz_v1"
 )
 
 func init() {

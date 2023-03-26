@@ -33,10 +33,10 @@ import (
 
 	"github.com/golang/protobuf/proto"
 	dpb "github.com/golang/protobuf/ptypes/duration"
+	"github.com/mrsiano/grpc-go/codes"
+	"github.com/mrsiano/grpc-go/metadata"
+	"github.com/mrsiano/grpc-go/status"
 	epb "google.golang.org/genproto/googleapis/rpc/errdetails"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/metadata"
-	"google.golang.org/grpc/status"
 )
 
 func (s) TestHandlerTransport_NewServerHandlerTransport(t *testing.T) {

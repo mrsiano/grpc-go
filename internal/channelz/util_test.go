@@ -31,9 +31,9 @@ import (
 	"syscall"
 	"testing"
 
+	"github.com/mrsiano/grpc-go/internal/channelz"
+	"github.com/mrsiano/grpc-go/internal/grpctest"
 	"golang.org/x/sys/unix"
-	"google.golang.org/grpc/internal/channelz"
-	"google.golang.org/grpc/internal/grpctest"
 )
 
 type s struct {

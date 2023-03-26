@@ -25,9 +25,9 @@
 package xdsresource
 
 import (
-	"google.golang.org/grpc/xds/internal"
-	"google.golang.org/grpc/xds/internal/xdsclient/bootstrap"
-	"google.golang.org/grpc/xds/internal/xdsclient/xdsresource/version"
+	"github.com/mrsiano/grpc-go/xds/internal"
+	"github.com/mrsiano/grpc-go/xds/internal/xdsclient/bootstrap"
+	"github.com/mrsiano/grpc-go/xds/internal/xdsclient/xdsresource/version"
 	"google.golang.org/protobuf/types/known/anypb"
 )
 

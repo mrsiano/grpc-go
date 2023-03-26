@@ -29,7 +29,7 @@ import (
 	"context"
 	"fmt"
 
-	"google.golang.org/grpc/grpclog"
+	"github.com/mrsiano/grpc-go/grpclog"
 )
 
 var logger = grpclog.Component("observability")

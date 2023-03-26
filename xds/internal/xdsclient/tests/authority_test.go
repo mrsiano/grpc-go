@@ -24,12 +24,12 @@ import (
 	"time"
 
 	"github.com/google/uuid"
-	"google.golang.org/grpc/internal/testutils"
-	"google.golang.org/grpc/internal/testutils/xds/e2e"
-	xdstestutils "google.golang.org/grpc/xds/internal/testutils"
-	"google.golang.org/grpc/xds/internal/xdsclient"
-	"google.golang.org/grpc/xds/internal/xdsclient/bootstrap"
-	"google.golang.org/grpc/xds/internal/xdsclient/xdsresource"
+	"github.com/mrsiano/grpc-go/internal/testutils"
+	"github.com/mrsiano/grpc-go/internal/testutils/xds/e2e"
+	xdstestutils "github.com/mrsiano/grpc-go/xds/internal/testutils"
+	"github.com/mrsiano/grpc-go/xds/internal/xdsclient"
+	"github.com/mrsiano/grpc-go/xds/internal/xdsclient/bootstrap"
+	"github.com/mrsiano/grpc-go/xds/internal/xdsclient/xdsresource"
 
 	v3clusterpb "github.com/envoyproxy/go-control-plane/envoy/config/cluster/v3"
 	v3corepb "github.com/envoyproxy/go-control-plane/envoy/config/core/v3"

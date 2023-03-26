@@ -21,8 +21,8 @@ package priority
 import (
 	"sync/atomic"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/resolver"
+	"github.com/mrsiano/grpc-go/balancer"
+	"github.com/mrsiano/grpc-go/resolver"
 )
 
 // ignoreResolveNowClientConn wraps a balancer.ClientConn and overrides the

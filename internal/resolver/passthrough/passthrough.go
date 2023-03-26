@@ -23,7 +23,7 @@ package passthrough
 import (
 	"errors"
 
-	"google.golang.org/grpc/resolver"
+	"github.com/mrsiano/grpc-go/resolver"
 )
 
 const scheme = "passthrough"

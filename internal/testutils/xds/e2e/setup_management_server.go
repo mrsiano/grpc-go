@@ -24,9 +24,9 @@ import (
 	"testing"
 
 	"github.com/google/uuid"
-	"google.golang.org/grpc/internal"
-	"google.golang.org/grpc/internal/testutils/xds/bootstrap"
-	"google.golang.org/grpc/resolver"
+	"github.com/mrsiano/grpc-go/internal"
+	"github.com/mrsiano/grpc-go/internal/testutils/xds/bootstrap"
+	"github.com/mrsiano/grpc-go/resolver"
 )
 
 // SetupManagementServer performs the following:

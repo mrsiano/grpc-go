@@ -21,7 +21,7 @@ package clusterresolver
 import (
 	"sync"
 
-	"google.golang.org/grpc/xds/internal/xdsclient/xdsresource"
+	"github.com/mrsiano/grpc-go/xds/internal/xdsclient/xdsresource"
 )
 
 type edsResourceWatcher interface {

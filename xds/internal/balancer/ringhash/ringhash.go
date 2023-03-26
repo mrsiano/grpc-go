@@ -25,14 +25,14 @@ import (
 	"fmt"
 	"sync"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/balancer/base"
-	"google.golang.org/grpc/balancer/weightedroundrobin"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/internal/grpclog"
-	"google.golang.org/grpc/internal/pretty"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/serviceconfig"
+	"github.com/mrsiano/grpc-go/balancer"
+	"github.com/mrsiano/grpc-go/balancer/base"
+	"github.com/mrsiano/grpc-go/balancer/weightedroundrobin"
+	"github.com/mrsiano/grpc-go/connectivity"
+	"github.com/mrsiano/grpc-go/internal/grpclog"
+	"github.com/mrsiano/grpc-go/internal/pretty"
+	"github.com/mrsiano/grpc-go/resolver"
+	"github.com/mrsiano/grpc-go/serviceconfig"
 )
 
 // Name is the name of the ring_hash balancer.

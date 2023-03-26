@@ -25,22 +25,21 @@ import (
 	"testing"
 
 	"github.com/google/uuid"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/credentials/insecure"
-	"google.golang.org/grpc/internal"
-	"google.golang.org/grpc/internal/envconfig"
-	"google.golang.org/grpc/internal/testutils/xds/bootstrap"
-	"google.golang.org/grpc/internal/testutils/xds/e2e"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/status"
+	"github.com/mrsiano/grpc-go/codes"
+	"github.com/mrsiano/grpc-go/credentials/insecure"
+	"github.com/mrsiano/grpc-go/internal"
+	"github.com/mrsiano/grpc-go/internal/envconfig"
+	"github.com/mrsiano/grpc-go/internal/testutils/xds/bootstrap"
+	"github.com/mrsiano/grpc-go/internal/testutils/xds/e2e"
+	"github.com/mrsiano/grpc-go/resolver"
+	"github.com/mrsiano/grpc-go/status"
 
 	v3clusterpb "github.com/envoyproxy/go-control-plane/envoy/config/cluster/v3"
 	v3endpointpb "github.com/envoyproxy/go-control-plane/envoy/config/endpoint/v3"
 	v3listenerpb "github.com/envoyproxy/go-control-plane/envoy/config/listener/v3"
 	v3routepb "github.com/envoyproxy/go-control-plane/envoy/config/route/v3"
-	testgrpc "google.golang.org/grpc/test/grpc_testing"
-	testpb "google.golang.org/grpc/test/grpc_testing"
+	testgrpc "github.com/mrsiano/grpc-go/test/grpc_testing"
+	testpb "github.com/mrsiano/grpc-go/test/grpc_testing"
 )
 
 // TestClientSideFederation tests that federation is supported.

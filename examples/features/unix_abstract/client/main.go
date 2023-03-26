@@ -30,9 +30,8 @@ import (
 	"log"
 	"time"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials/insecure"
-	ecpb "google.golang.org/grpc/examples/features/proto/echo"
+	"github.com/mrsiano/grpc-go/credentials/insecure"
+	ecpb "github.com/mrsiano/grpc-go/examples/features/proto/echo"
 )
 
 var (

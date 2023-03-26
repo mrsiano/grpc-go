@@ -29,15 +29,15 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
 	"github.com/google/uuid"
-	"google.golang.org/grpc/internal/envconfig"
-	"google.golang.org/grpc/internal/grpcsync"
-	"google.golang.org/grpc/internal/grpctest"
-	"google.golang.org/grpc/internal/testutils"
-	"google.golang.org/grpc/internal/testutils/xds/e2e"
-	xdstestutils "google.golang.org/grpc/xds/internal/testutils"
-	"google.golang.org/grpc/xds/internal/xdsclient"
-	"google.golang.org/grpc/xds/internal/xdsclient/bootstrap"
-	"google.golang.org/grpc/xds/internal/xdsclient/xdsresource"
+	"github.com/mrsiano/grpc-go/internal/envconfig"
+	"github.com/mrsiano/grpc-go/internal/grpcsync"
+	"github.com/mrsiano/grpc-go/internal/grpctest"
+	"github.com/mrsiano/grpc-go/internal/testutils"
+	"github.com/mrsiano/grpc-go/internal/testutils/xds/e2e"
+	xdstestutils "github.com/mrsiano/grpc-go/xds/internal/testutils"
+	"github.com/mrsiano/grpc-go/xds/internal/xdsclient"
+	"github.com/mrsiano/grpc-go/xds/internal/xdsclient/bootstrap"
+	"github.com/mrsiano/grpc-go/xds/internal/xdsclient/xdsresource"
 
 	v3corepb "github.com/envoyproxy/go-control-plane/envoy/config/core/v3"
 	v3listenerpb "github.com/envoyproxy/go-control-plane/envoy/config/listener/v3"
@@ -45,8 +45,8 @@ import (
 	v3httppb "github.com/envoyproxy/go-control-plane/envoy/extensions/filters/network/http_connection_manager/v3"
 	v3discoverypb "github.com/envoyproxy/go-control-plane/envoy/service/discovery/v3"
 
-	_ "google.golang.org/grpc/xds"                            // To ensure internal.NewXDSResolverWithConfigForTesting is set.
-	_ "google.golang.org/grpc/xds/internal/httpfilter/router" // Register the router filter.
+	_ "github.com/mrsiano/grpc-go/xds"                            // To ensure internal.NewXDSResolverWithConfigForTesting is set.
+	_ "github.com/mrsiano/grpc-go/xds/internal/httpfilter/router" // Register the router filter.
 )
 
 func overrideFedEnvVar(t *testing.T) {
