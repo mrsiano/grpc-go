@@ -10,7 +10,7 @@ require (
 	go.opencensus.io v0.24.0
 	golang.org/x/oauth2 v0.5.0
 	google.golang.org/api v0.109.0
-	github.com/mrsiano/grpc-go latest
+	github.com/mrsiano/grpc-go v0.0.0-20230319094612-971ef60b60ff
 	github.com/mrsiano/grpc-go/stats/opencensus v0.0.0-20230317183452-b638faff2204
 )
 
