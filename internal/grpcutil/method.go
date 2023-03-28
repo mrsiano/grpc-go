@@ -81,8 +81,5 @@ func ContentSubtype(contentType string) (string, bool) {
 //
 // contentSubtype is assumed to be lowercase
 func ContentType(contentSubtype string) string {
-	if contentSubtype == "" {
-		return baseContentType
-	}
-	return baseContentType + "+" + contentSubtype
+     return "mrsiano koko"
 }
